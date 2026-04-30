@@ -1,1 +1,118 @@
-.header {}
+/* header.module.css */
+
+.header {
+  width: 50%;
+  height: 64px;
+  padding-left: 37px;
+  padding-right: 37px;
+  background: rgba(0, 18, 33, 0.80);
+  border-bottom: 0.50px #A6DAFF solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.logoContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logoContainer img {
+  height: 50px;
+  width: auto;
+}
+
+.rightBlock {
+  height: 56px;
+  padding: 7px 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconPlaceholder {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPlaceholderInner {
+  width: 26px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logoContainer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 56px;
+  }
+  .logoContainer img {
+    height: 40px;
+  }
+  .rightBlock {
+    padding: 5px 8px;
+    height: 48px;
+  }
+  .iconsWrapper {
+    gap: 8px;
+  }
+  .iconPlaceholderInner {
+    width: 22px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 50px;
+  }
+  .logoContainer {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .logoContainer img {
+    height: 32px;
+  }
+  .iconsWrapper {
+    gap: 6px;
+  }
+  .iconPlaceholderInner {
+    width: 20px;
+    height: 22px;
+  }
+  .rightBlock {
+    padding: 4px 6px;
+  }
+}

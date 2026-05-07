@@ -24,6 +24,7 @@ export const Lending = () => {
 
             <section className={styles.hero}>
                 <div className={styles.heroContent}>
+                    <img src="./src/components/lending/img/lumitune_002.svg" alt="" />
                     <h1>Закортілося чогось новенького у рутині?</h1>
                     <p>Мерщій приєднуйся до шабашу музик! Тут звучать ритми, історії!</p>
                     <div className={styles.heroButtons}>
@@ -31,7 +32,10 @@ export const Lending = () => {
                         <button className={styles.btnPrimary}>Зареєструватися</button>
                     </div>
                 </div>
+                <img className={styles.background} src="./src/components/lending/img/background.svg" alt="" />
             </section>
+            <img className={styles.lumik} src="./src/components/lending/img/lumik_3.svg" alt="" />
+            <img className={styles.frame} src="./src/components/lending/img/Frame.svg" alt="" />
 
             {/* 🔥 ОБНОВЛЕННЫЕ СТАТЫ */}
             <section className={styles.stats}>

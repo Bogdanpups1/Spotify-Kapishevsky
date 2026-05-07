@@ -427,6 +427,23 @@
   min-width: 180px;
 }
 
+.lumik{
+  position: absolute;
+  top: 122px;
+  left: 800px;
+  z-index: 100;
+}
+
+.frame{
+  z-index: 1;
+}
+
+.background{
+  position: absolute;
+  right: 0px;
+  z-index: -100;
+}
+
 .statCard:hover {
   transform: translateY(-6px) scale(1.05);
   box-shadow:
